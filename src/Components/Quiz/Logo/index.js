@@ -1,4 +1,4 @@
-import Image from './../../../Assets/LogoJojo.png'
+import Image from './../../../Assets/Images/jojo_logo.png'
 
 const Logo = () => {
     return(

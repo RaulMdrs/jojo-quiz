@@ -1,6 +1,6 @@
-const Button = ({text, click}) => {
+const Button = (props) => {
     return(
-        <button onClick={click} className="px-24 py-6 rounded-full text-white bg-[#ed686e] font-semibold uppercase text-2xl tracking-widest transition-all hover:scale-105 hover:bg-[#cf595e]">{text}</button>
+        <button {...props} className="px-24 py-6 rounded-full text-white bg-[#ed686e] font-semibold uppercase text-2xl tracking-widest transition-all hover:bg-[#cf595e] disabled:bg-gray-400/70 disabled:text-gray-300" />
     )
 }
 

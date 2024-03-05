@@ -1,7 +1,6 @@
 import QuestionCounter from "../Quiz/QuestionCounter";
 
 const Header = ({ data }) => {
-    console.log(data)
     return(
         <header className="flex justify-between px-6 w-full p-4 bg-[#b754a2] shadow-xl">
             <h1 className="text-white uppercase text-2xl">Jojo <span className="font-bold">Quiz</span></h1>

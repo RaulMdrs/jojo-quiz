@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {},
+    {
+      "Question": "Escolha um prato favorito",
+      "Options": [
+        {"A": "Pizza"},
+        {"B": "Sushi"},
+        {"C": "Hambúrguer"},
+        {"D": "Salada"}
+      ]
+    },
+    {
+      "Question": "Qual sua atividade de lazer preferida?",
+      "Options": [
+        {"A": "Ler"},
+        {"B": "Praticar esportes"},
+        {"C": "Jogar videogames"},
+        {"D": "Meditar"}
+      ]
+    },
+    {
+      "Question": "Escolha um superpoder",
+      "Options": [
+        {"A": "Voar"},
+        {"B": "Invisibilidade"},
+        {"C": "Super força"},
+        {"D": "Ler mentes"}
+      ]
+    }
+  ],
+
+  "characters" : {
+    "A": {
+      "image": "https://static.jojowiki.com/images/thumb/c/ca/latest/20200927002609/Star_Platinum_SC_Infobox_Anime.png/400px-Star_Platinum_SC_Infobox_Anime.png",
+      "name": "Star Platinum"
+    },
+
+    "B": {
+      "image": "https://static.jojowiki.com/images/thumb/0/09/latest/20221019190021/Silver_Chariot_SC_Infobox_Anime.png/400px-Silver_Chariot_SC_Infobox_Anime.png",
+      "name": "Silver Chariot"
+    },
+
+    "C": {
+      "image": "https://static.jojowiki.com/images/thumb/f/f5/latest/20210424162912/The_World_Infobox_Manga.png/400px-The_World_Infobox_Manga.png",
+      "name": "The World"
+    },
+
+    "D": {
+      "image": "https://static.jojowiki.com/images/thumb/8/8e/latest/20210422175130/Echoes_ACT3_DU_Infobox_Anime.png/400px-Echoes_ACT3_DU_Infobox_Anime.png",
+      "name": "Echoes"
+    },
+
+    "Generic": {
+      "image": "https://static.jojowiki.com/images/thumb/c/c5/latest/20200625184236/Crazy_Diamond_Infobox_Manga.png/400px-Crazy_Diamond_Infobox_Manga.png",
+      "name": "Crazy Diamond"
+    }
+  }
+}

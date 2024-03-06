@@ -30,30 +30,35 @@
     }
   ],
 
-  "characters" : {
+  "characters": {
     "A": {
       "image": "https://static.jojowiki.com/images/thumb/c/ca/latest/20200927002609/Star_Platinum_SC_Infobox_Anime.png/400px-Star_Platinum_SC_Infobox_Anime.png",
-      "name": "Star Platinum"
+      "name": "Star Platinum",
+      "description": "Star Platinum é o Stand de Jotaro Kujo, introduzido na Parte 3 de JoJo's Bizarre Adventure, Stardust Crusaders. É um Stand de curto alcance com imensa força, velocidade e precisão, capaz de ataques físicos devastadores e reflexos incríveis."
     },
-
+  
     "B": {
       "image": "https://static.jojowiki.com/images/thumb/0/09/latest/20221019190021/Silver_Chariot_SC_Infobox_Anime.png/400px-Silver_Chariot_SC_Infobox_Anime.png",
-      "name": "Silver Chariot"
+      "name": "Silver Chariot",
+      "description": "Silver Chariot é o Stand de Jean Pierre Polnareff, apresentado na Parte 3 de JoJo's Bizarre Adventure, Stardust Crusaders. É um Stand rápido e ágil que empunha um florete, com incrível esgrima e precisão."
     },
-
+  
     "C": {
       "image": "https://static.jojowiki.com/images/thumb/f/f5/latest/20210424162912/The_World_Infobox_Manga.png/400px-The_World_Infobox_Manga.png",
-      "name": "The World"
+      "name": "The World",
+      "description": "The World é o Stand de Dio Brando, introduzido na Parte 3 de JoJo's Bizarre Adventure, Stardust Crusaders. Possui a capacidade de parar o tempo por um breve período, concedendo ao usuário uma imensa vantagem tática em combate."
     },
-
+  
     "D": {
       "image": "https://static.jojowiki.com/images/thumb/8/8e/latest/20210422175130/Echoes_ACT3_DU_Infobox_Anime.png/400px-Echoes_ACT3_DU_Infobox_Anime.png",
-      "name": "Echoes"
+      "name": "Echoes",
+      "description": "Echoes é o Stand de Koichi Hirose, que aparece na Parte 4 de JoJo's Bizarre Adventure, Diamond is Unbreakable. Ele evolui por três atos distintos, cada um com habilidades únicas, que vão desde manipulação de som até criar comandos escritos com efeitos explosivos."
     },
-
+  
     "Generic": {
       "image": "https://static.jojowiki.com/images/thumb/c/c5/latest/20200625184236/Crazy_Diamond_Infobox_Manga.png/400px-Crazy_Diamond_Infobox_Manga.png",
-      "name": "Crazy Diamond"
+      "name": "Crazy Diamond",
+      "description": "Crazy Diamond é o Stand de Josuke Higashikata, apresentado na Parte 4 de JoJo's Bizarre Adventure, Diamond is Unbreakable. Tem o poder de restaurar objetos ou pessoas ao seu estado anterior, além de manipular matéria em nível molecular."
     }
   }
 }

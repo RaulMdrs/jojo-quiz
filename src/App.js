@@ -21,11 +21,11 @@ function App() {
   */
 
   return (
-    <main className="h-screen bg-gradient-to-br from-[#3a2146] to-[#b96ae0]">
+    <main className='h-screen bg-gradient-to-br from-[#3a2146] to-[#b96ae0] overflow-auto'>
       <Header data={quizData ? {quizData, start: quizStep === 2 } : {}} />
       {quizStep === 1 ? <Start startAction={() => setQuizStep(2)} /> : ""}
       {quizStep === 2 ? <Questions data={setQuizCurrentData} step={setQuizStep} /> : ""}
-      {quizStep === 3 ? <Result data={quizData} /> : ""}
+      {quizStep === 3 ? <Result data={quizData} step={setQuizStep} /> : ""}
     </main>
   );
 }

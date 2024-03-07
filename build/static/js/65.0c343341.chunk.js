@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjojo_quiz=self.webpackChunkjojo_quiz||[]).push([[65],{65:(a,e,c)=>{a.exports=c.p+"static/media/crazy_diamond.8ce1c6a20d5aadb54061.mp3"}}]);

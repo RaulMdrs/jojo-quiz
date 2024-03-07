@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjojo_quiz=self.webpackChunkjojo_quiz||[]).push([[578],{578:(e,s,c)=>{e.exports=c.p+"static/media/echoes.a8e6eec57bc02a873b6b.mp3"}}]);

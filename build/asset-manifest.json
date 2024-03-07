@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e9aa7de2.css",
+    "main.js": "/static/js/main.d396720a.js",
+    "static/js/65.0c343341.chunk.js": "/static/js/65.0c343341.chunk.js",
+    "static/js/578.c3ab9382.chunk.js": "/static/js/578.c3ab9382.chunk.js",
+    "static/js/867.e7808a20.chunk.js": "/static/js/867.e7808a20.chunk.js",
+    "static/js/508.9297bb30.chunk.js": "/static/js/508.9297bb30.chunk.js",
+    "static/js/811.0afe9c52.chunk.js": "/static/js/811.0afe9c52.chunk.js",
+    "static/media/start.mp3": "/static/media/start.f9262a8758677026b61a.mp3",
+    "static/media/the_world.mp3": "/static/media/the_world.b1fb9fc045bcc381727a.mp3",
+    "static/media/crazy_diamond.mp3": "/static/media/crazy_diamond.8ce1c6a20d5aadb54061.mp3",
+    "static/media/silver_chariot.mp3": "/static/media/silver_chariot.4d77e4db7c1eaf450f59.mp3",
+    "static/media/star_platinum.mp3": "/static/media/star_platinum.bcce8abba134b0337e97.mp3",
+    "static/media/click.mp3": "/static/media/click.fd8622892d5f812719c9.mp3",
+    "static/media/echoes.mp3": "/static/media/echoes.a8e6eec57bc02a873b6b.mp3",
+    "static/media/jojo_logo.png": "/static/media/jojo_logo.f95b4c85a1c68a581be1.png",
+    "index.html": "/index.html",
+    "main.e9aa7de2.css.map": "/static/css/main.e9aa7de2.css.map",
+    "main.d396720a.js.map": "/static/js/main.d396720a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9aa7de2.css",
+    "static/js/main.d396720a.js"
+  ]
+}

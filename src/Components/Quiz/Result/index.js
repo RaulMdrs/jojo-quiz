@@ -18,7 +18,7 @@ const Result = ({ data, step }) => {
             console.error(err);
             throw new Error("Erro ao obter dados dos personagens.")
         });
-    }, [])
+    }, [data.answers])
 
     function shareButtonHandler() {
         console.log("share");

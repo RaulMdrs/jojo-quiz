@@ -15,36 +15,15 @@ import clickSound from "./../../../Assets/Sounds/click.mp3";
 const Questions = ({ data, step }) => {
     const anim = useSpring({ opacity: 1, from: { opacity: 0 } });
 
+    const [questionsList, setQuestionsList] = useState([]);
     const [currentQuestion, setCurrentQuestion] = useState({});
     const [currentQuestionIdentifier, setCurrentQuestionIdentifier] = useState(1);
     const [questionsLength, setQuestionsLength] = useState(null);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [answers, setAnswers] = useState([]);
 
-    useEffect(() => {
-        getQuestions().then(res => {
-            const fixedStartingQuestions = [[], ...res];
-            setCurrentQuestion(fixedStartingQuestions[currentQuestionIdentifier]);
-            setQuestionsLength(Object.keys(fixedStartingQuestions).length - 1);
-        }).catch(err => {
-            console.error(err);
-            throw new Error("Erro ao obter dados das questões.")
-        });
-
-        if (answers.length === questionsLength) {
-            data({
-                current: currentQuestionIdentifier,
-                quantity: questionsLength,
-                answers: answers
-            });
-
-            step(3);
-        }
-    }, [currentQuestionIdentifier, data, step, questionsLength, answers, currentQuestion, selectedAnswer]);
-
     const nextQuestionHandler = () => {
         try {
-            
             if (selectedAnswer != null) {
                 setAnswers(answers => [...answers, selectedAnswer.key]);
                 setSelectedAnswer(null);
@@ -60,6 +39,44 @@ const Questions = ({ data, step }) => {
         setSelectedAnswer({ key, index });
         playSound(clickSound, 0.5);
     }
+
+    useEffect(() => {
+        getQuestions().then(res => {
+            const gettedQuestionsList = [[], ...res];
+            setQuestionsList(gettedQuestionsList);
+            setQuestionsLength(Object.keys(gettedQuestionsList).length - 1);
+        }).catch(err => {
+            console.error(err);
+            throw new Error("Erro ao obter dados das questões.")
+        });
+    }, []);
+
+    useEffect(() => {
+        try {
+            if (questionsList.length > 0) {
+                setCurrentQuestion(questionsList[currentQuestionIdentifier]);
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }, [currentQuestionIdentifier, questionsList]);
+
+    useEffect(() => {
+        if (answers.length === questionsLength) {
+            data({
+                current: currentQuestionIdentifier,
+                quantity: questionsLength,
+                answers: answers
+            });
+
+            step(3);
+        } else {
+            data({
+                current: currentQuestionIdentifier,
+                quantity: questionsLength
+            });
+        }
+    }, [answers, currentQuestionIdentifier, data, questionsLength, step]);
 
     return (
         <animated.div style={anim}>

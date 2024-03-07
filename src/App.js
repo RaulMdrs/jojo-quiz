@@ -1,5 +1,8 @@
 import { useState } from 'react';
 
+// ? Lodash object comparing
+import { isEqual } from 'lodash';
+
 // ? Importing Sound
 import startSound from "./Assets/Sounds/start.mp3"
 
@@ -11,14 +14,16 @@ import { Questions, Start, Result } from "./Components/Quiz";
 import { playSound } from './utils';
 
 // ! Tailwind CSS Prod Output File
-import "./Styles/output.css"; 
+import "./Styles/output.css";
 
-function App() {
+const App = () => {
   const [quizData, setQuizData] = useState({});
   const [quizStep, setQuizStep] = useState(1);
-  
+
   const setQuizCurrentData = function (data) {
-    setQuizData(() => data);
+    if (!isEqual(data, quizData)) {
+      setQuizData(data);
+    }
   };
 
   const startQuizHandler = () => {
@@ -35,7 +40,7 @@ function App() {
 
   return (
     <main className='h-screen bg-gradient-to-br from-[#3a2146] to-[#b96ae0] overflow-auto'>
-      <Header data={quizData ? {quizData, start: quizStep === 2 } : {}} />
+      <Header data={quizData ? { quizData, start: quizStep === 2 } : {}} />
       {quizStep === 1 ? <Start startAction={startQuizHandler} /> : ""}
       {quizStep === 2 ? <Questions data={setQuizCurrentData} step={setQuizStep} /> : ""}
       {quizStep === 3 ? <Result data={quizData} step={setQuizStep} /> : ""}

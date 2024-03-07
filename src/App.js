@@ -10,7 +10,7 @@ import { Questions, Start, Result } from "./Components/Quiz";
 // ? Importing Utils
 import { playSound } from './utils';
 
-// ! Tailwind CSS Prod
+// ! Tailwind CSS Prod Output File
 import "./Styles/output.css"; 
 
 function App() {
@@ -27,10 +27,10 @@ function App() {
   };
 
   /* 
-  Steps:
-  1 -> Iniciar quiz
-  2 -> Questões do quiz
-  3 -> Resultado do quiz
+  ! Steps:
+  ? 1 -> Iniciar quiz
+  ? 2 -> Questões do quiz
+  ? 3 -> Resultado do quiz
   */
 
   return (

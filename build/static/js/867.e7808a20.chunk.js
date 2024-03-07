@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjojo_quiz=self.webpackChunkjojo_quiz||[]).push([[867],{867:(e,s,i)=>{e.exports=i.p+"static/media/silver_chariot.4d77e4db7c1eaf450f59.mp3"}}]);

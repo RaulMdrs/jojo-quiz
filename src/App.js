@@ -1,9 +1,17 @@
 import { useState } from 'react';
 
+// ? Importing Sound
+import startSound from "./Assets/Sounds/start.mp3"
+
 // ? Importing components
 import Header from "./Components/Header";
-import { Questions, Start } from "./Components/Quiz";
-import Result from './Components/Quiz/Result';
+import { Questions, Start, Result } from "./Components/Quiz";
+
+// ? Importing Utils
+import { playSound } from './utils';
+
+// ! Tailwind CSS Prod
+import "./Styles/output.css"; 
 
 function App() {
   const [quizData, setQuizData] = useState({});
@@ -11,6 +19,11 @@ function App() {
   
   const setQuizCurrentData = function (data) {
     setQuizData(() => data);
+  };
+
+  const startQuizHandler = () => {
+    setQuizStep(2);
+    playSound(startSound, 0.5);
   };
 
   /* 
@@ -23,7 +36,7 @@ function App() {
   return (
     <main className='h-screen bg-gradient-to-br from-[#3a2146] to-[#b96ae0] overflow-auto'>
       <Header data={quizData ? {quizData, start: quizStep === 2 } : {}} />
-      {quizStep === 1 ? <Start startAction={() => setQuizStep(2)} /> : ""}
+      {quizStep === 1 ? <Start startAction={startQuizHandler} /> : ""}
       {quizStep === 2 ? <Questions data={setQuizCurrentData} step={setQuizStep} /> : ""}
       {quizStep === 3 ? <Result data={quizData} step={setQuizStep} /> : ""}
     </main>

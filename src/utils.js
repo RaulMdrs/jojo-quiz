@@ -26,7 +26,7 @@ function findMostRepeated(frequencies) {
     let biggerFrequency = 0;
 
     for (let letter in frequencies) {
-        if (frequencies[letter] == biggerFrequency) {
+        if (frequencies[letter] === biggerFrequency) {
             letterMoreFrequent = null;
         } else if (frequencies[letter] > biggerFrequency) {
             letterMoreFrequent = letter;
@@ -54,4 +54,11 @@ export function replysMostFrequent(answers) {
         console.error(error);
         return null;
     }
+}
+
+// ? Play Sound
+export const playSound = (dir, volume=1.0) => {
+    const audio = new Audio(dir);
+    audio.volume = volume;
+    audio.play();
 }

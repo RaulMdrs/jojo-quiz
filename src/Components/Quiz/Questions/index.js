@@ -1,10 +1,16 @@
 import { useEffect, useState } from 'react'
+
+// ? Utils
 import { getQuestions, playSound } from './../../../utils';
+
+// ? Components
 import Button from '../Button';
+
+// ? Spring Animation Lib
 import { useSpring, animated } from 'react-spring';
 
 // ? Importing click sound
-import clickSound from "./../../../Assets/Sounds/click.mp3"
+import clickSound from "./../../../Assets/Sounds/click.mp3";
 
 const Questions = ({ data, step }) => {
     const anim = useSpring({ opacity: 1, from: { opacity: 0 } });
@@ -33,13 +39,8 @@ const Questions = ({ data, step }) => {
             });
 
             step(3);
-        } else {
-            data({
-                current: currentQuestionIdentifier,
-                quantity: questionsLength
-            });
         }
-    }, [currentQuestionIdentifier, data.answers, step, questionsLength, answers, currentQuestion, selectedAnswer]);
+    }, [currentQuestionIdentifier, data, step, questionsLength, answers, currentQuestion, selectedAnswer]);
 
     const nextQuestionHandler = () => {
         try {

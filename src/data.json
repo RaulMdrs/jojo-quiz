@@ -26,6 +26,33 @@
         {"C": "Super força"},
         {"D": "Ler mentes"}
       ]
+    },
+    {
+      "Question": "Se você pudesse ter um animal de estimação exótico, qual seria?",
+      "Options": [
+        {"A": "Leão"},
+        {"B": "Panda"},
+        {"C": "Tigre"},
+        {"D": "Cobra"}
+      ]
+    },
+    {
+      "Question": "Se você pudesse viajar no tempo, para qual época histórica iria?",
+      "Options": [
+        {"A": "Idade Média"},
+        {"B": "Renascimento"},
+        {"C": "Era Vitoriana"},
+        {"D": "Década de 1960"}
+      ]
+    },
+    {
+      "Question": "Qual é a sua estação do ano favorita?",
+      "Options": [
+        {"A": "Primavera"},
+        {"B": "Verão"},
+        {"C": "Outono"},
+        {"D": "Inverno"}
+      ]
     }
   ],
 

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjojo_quiz=self.webpackChunkjojo_quiz||[]).push([[811],{811:(e,c,s)=>{e.exports=s.p+"static/media/the_world.b1fb9fc045bcc381727a.mp3"}}]);

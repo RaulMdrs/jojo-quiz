@@ -21,7 +21,7 @@ export const getCharacters = async () => {
 }
 
 // ? Calculando frequencia para definir resultado
-function findMostRepeated(frequencies) {
+const findMostRepeated = (frequencies) => {
     let letterMoreFrequent = '';
     let biggerFrequency = 0;
 
@@ -37,7 +37,7 @@ function findMostRepeated(frequencies) {
     return letterMoreFrequent;
 }
 
-export function replysMostFrequent(answers) {
+export const replysMostFrequent = (answers) => {
     try {
         let frequencies = {};
     

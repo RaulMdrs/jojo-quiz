@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { getQuestions, playSound } from './../../../utils';
 
 // ? Components
-import Button from '../Button';
+import { Button } from '../';
 
 // ? Spring Animation Lib
 import { useSpring, animated } from 'react-spring';
@@ -25,7 +25,7 @@ const Questions = ({ data, step }) => {
     const nextQuestionHandler = () => {
         try {
             if (selectedAnswer != null) {
-                setAnswers(answers => [...answers, selectedAnswer.key]);
+                setAnswers(prevAnswers => [...prevAnswers, selectedAnswer.key]);
                 setSelectedAnswer(null);
             }
 

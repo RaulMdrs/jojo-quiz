@@ -1,4 +1,4 @@
-import QuestionCounter from "../Quiz/QuestionCounter";
+import { QuestionCounter } from "./../Quiz";
 
 const Header = ({ data }) => {
     return(

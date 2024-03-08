@@ -20,7 +20,7 @@ const App = () => {
   const [quizData, setQuizData] = useState({});
   const [quizStep, setQuizStep] = useState(1);
 
-  const setQuizCurrentData = function (data) {
+  const setQuizCurrentData = (data) => {
     if (!isEqual(data, quizData)) {
       setQuizData(data);
     }
@@ -41,9 +41,18 @@ const App = () => {
   return (
     <main className='h-screen bg-gradient-to-br from-[#3a2146] to-[#b96ae0] overflow-auto'>
       <Header data={quizData ? { quizData, start: quizStep === 2 } : {}} />
-      {quizStep === 1 ? <Start startAction={startQuizHandler} /> : ""}
-      {quizStep === 2 ? <Questions data={setQuizCurrentData} step={setQuizStep} /> : ""}
-      {quizStep === 3 ? <Result data={quizData} step={setQuizStep} /> : ""}
+      {(() => {
+        switch (quizStep) {
+          case 1:
+            return <Start startAction={startQuizHandler} />;
+          case 2:
+            return <Questions data={setQuizCurrentData} step={setQuizStep} />;
+          case 3:
+            return <Result data={quizData} step={setQuizStep} />;
+          default:
+            return null;
+        }
+      })()}
     </main>
   );
 }

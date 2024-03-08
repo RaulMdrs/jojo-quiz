@@ -6,11 +6,11 @@ const Start = ({ startAction }) => {
 
   return (
     <animated.div style={anim}>
-      <section className="flex flex-col gap-8 items-center justify-center p-32">
+      <section className="flex flex-col gap-8 items-center justify-center px-8 pt-32 md:p-32">
         
         <Logo />
 
-        <p className="text-white font-medium">Inicie o Quiz para descobrir qual stand de <span className="font-bold">Jojo Bizarre Adventures</span> você é!</p>
+        <p className="text-white font-medium text-center text-xs md:text-md">Inicie o Quiz para descobrir qual stand de <span className="font-bold">Jojo Bizarre Adventures</span> você é!</p>
 
         <Button onClick={startAction}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8" >

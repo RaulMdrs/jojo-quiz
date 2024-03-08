@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9aa7de2.css",
-    "main.js": "/static/js/main.92030417.js",
+    "main.css": "/static/css/main.c7af8c68.css",
+    "main.js": "/static/js/main.e1ea8880.js",
     "static/js/65.0c343341.chunk.js": "/static/js/65.0c343341.chunk.js",
     "static/js/578.c3ab9382.chunk.js": "/static/js/578.c3ab9382.chunk.js",
     "static/js/867.e7808a20.chunk.js": "/static/js/867.e7808a20.chunk.js",
@@ -16,11 +16,11 @@
     "static/media/echoes.mp3": "/static/media/echoes.a8e6eec57bc02a873b6b.mp3",
     "static/media/jojo_logo.png": "/static/media/jojo_logo.f95b4c85a1c68a581be1.png",
     "index.html": "/index.html",
-    "main.e9aa7de2.css.map": "/static/css/main.e9aa7de2.css.map",
-    "main.92030417.js.map": "/static/js/main.92030417.js.map"
+    "main.c7af8c68.css.map": "/static/css/main.c7af8c68.css.map",
+    "main.e1ea8880.js.map": "/static/js/main.e1ea8880.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9aa7de2.css",
-    "static/js/main.92030417.js"
+    "static/css/main.c7af8c68.css",
+    "static/js/main.e1ea8880.js"
   ]
 }

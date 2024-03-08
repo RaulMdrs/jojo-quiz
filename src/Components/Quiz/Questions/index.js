@@ -80,8 +80,8 @@ const Questions = ({ data, step }) => {
 
     return (
         <animated.div style={anim}>
-            <section className='flex flex-col gap-6 p-32'>
-                <h1 className='text-2xl text-center text-gray-200 uppercase font-medium'>Questão {currentQuestionIdentifier}: {currentQuestion.Question}</h1>
+            <section className='flex flex-col gap-6 px-8 pt-32 md:p-32'>
+                <h1 className='text-lg md:text-2xl text-center text-gray-200 uppercase font-medium'>Questão {currentQuestionIdentifier}: {currentQuestion.Question}</h1>
                 <div className='flex flex-col gap-4'>
                     {currentQuestion.Options && currentQuestion.Options.map((option, index) => {
                         const key = Object.keys(option)[0];

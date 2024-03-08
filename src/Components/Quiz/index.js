@@ -3,5 +3,6 @@ import Button from './Button';
 import Start from './Start';
 import Questions from './Questions';
 import Result from './Result';
+import Share from './Share'
 
-export { Logo, Button, Start, Questions, Result }
+export { Logo, Button, Start, Questions, Result, Share }

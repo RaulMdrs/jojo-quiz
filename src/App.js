@@ -39,7 +39,13 @@ const App = () => {
   */
 
   return (
-    <main className='h-screen bg-gradient-to-br from-[#3a2146] to-[#b96ae0] overflow-auto'>
+    <main className="
+    h-screen 
+    bg-gradient-to-br 
+    from-[#3a2146] 
+    to-[#b96ae0] 
+    overflow-auto
+    ">
       <Header data={quizData ? { quizData, start: quizStep === 2 } : {}} />
       {(() => {
         switch (quizStep) {

@@ -16,11 +16,12 @@ export const Questions = ({ data, step }) => {
     const anim = useSpring({ opacity: 1, from: { opacity: 0 } });
 
     const [questionsList, setQuestionsList] = useState([]);
-    const [currentQuestion, setCurrentQuestion] = useState({});
     const [currentQuestionIdentifier, setCurrentQuestionIdentifier] = useState(1);
-    const [questionsLength, setQuestionsLength] = useState(null);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [answers, setAnswers] = useState([]);
+
+    // ? Questions quantity
+    const questionsLength = questionsList.length - 1;
 
     const nextQuestionHandler = () => {
         try {
@@ -44,22 +45,11 @@ export const Questions = ({ data, step }) => {
         getQuestions().then(res => {
             const gettedQuestionsList = [[], ...res];
             setQuestionsList(gettedQuestionsList);
-            setQuestionsLength(Object.keys(gettedQuestionsList).length - 1);
         }).catch(err => {
             console.error(err);
             throw new Error("Erro ao obter dados das questões.")
         });
     }, []);
-
-    useEffect(() => {
-        try {
-            if (questionsList.length > 0) {
-                setCurrentQuestion(questionsList[currentQuestionIdentifier]);
-            }
-        } catch (error) {
-            console.error(error);
-        }
-    }, [currentQuestionIdentifier, questionsList]);
 
     useEffect(() => {
         if (answers.length === questionsLength) {
@@ -96,10 +86,10 @@ export const Questions = ({ data, step }) => {
                 uppercase 
                 font-medium
                 ">
-                    Questão {currentQuestionIdentifier}: {currentQuestion.Question}
+                    Questão {currentQuestionIdentifier}: {questionsList.length > 0 ? questionsList[currentQuestionIdentifier].Question : "Carregando questão..."}
                 </h1>
                 <div className="flex flex-col gap-4">
-                    {currentQuestion.Options && currentQuestion.Options.map((option, index) => {
+                    {questionsList.length > 0 && questionsList[currentQuestionIdentifier].Options.map((option, index) => {
                         const key = Object.keys(option)[0];
                         const value = option[key];
                         return (
